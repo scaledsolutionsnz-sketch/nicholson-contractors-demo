@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_Gpe1gxzMfjpTHmtFH1RCzrJ7889W",
+    "url": "https://nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app",
+    "inspectorUrl": "https://vercel.com/scaled-solutions/nicholson-contractors-demo/Gpe1gxzMfjpTHmtFH1RCzrJ7889W",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_Gpe1gxzMfjpTHmtFH1RCzrJ7889W"
+  },
+  "message": "Deployment nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+npm notice run npx
+npm notice run 'vc' deploy --prod --yes
+Vercel CLI 59.19.0 (Node.js 26.7.0)
+Deploying nicholson-contractors-demo
+Uploading [--------------------] (0.0B/2.2MB)
+Uploading [=====---------------] (579.8KB/2.2MB)
+Uploading [==========----------] (1.1MB/2.2MB)
+Uploading [===============-----] (1.7MB/2.2MB)
+Uploading [====================] (2.2MB/2.2MB)
+  Inspect         https://vercel.com/scaled-solutions/nicholson-contractors-demo/Gpe1gxzMfjpTHmtFH1RCzrJ7889W
+  Production      https://nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app
+Building…
+Building…
+Running build in Cleveland, USA (East) – cle1
+Build machine configuration: 4 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 40 deployment files...
+[2K[1A[2K[G  Production      https://nicholson-contractors-demo-njx0hlt9c-scaled-solutions.vercel.app
+Completing…
+▲ Aliased         https://nicholson-contractors-demo.vercel.app
