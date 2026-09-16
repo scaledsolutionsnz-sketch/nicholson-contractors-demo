@@ -1,0 +1,416 @@
+[
+  {
+    "width": 375,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.496,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-earthworks.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.496,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-terraced-site.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.496,
+          "ratio": "auto 1920 / 1281",
+          "service": false,
+          "src": "img/hero-farm-track.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-earthworks.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-driveways.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.334519572953737,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-fencing.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.7857142857142858,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-drainage.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-tractor.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 182.8125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-siteprep.jpg",
+          "w": 325
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 245.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/about-tractor.jpg",
+          "w": 327
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-earthworks.jpg",
+          "w": 335
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-driveways.jpg",
+          "w": 335
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.334519572953737,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-fencing.jpg",
+          "w": 335
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "width": 768,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-earthworks.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-terraced-site.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1920 / 1281",
+          "service": false,
+          "src": "img/hero-farm-track.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-earthworks.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-driveways.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-fencing.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.7777777777777777,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-drainage.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-tractor.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 194.0625,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-siteprep.jpg",
+          "w": 345
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 540,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/about-tractor.jpg",
+          "w": 720
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-earthworks.jpg",
+          "w": 225.328125
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-driveways.jpg",
+          "w": 225.328125
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-fencing.jpg",
+          "w": 225.328125
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-earthworks.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1920 / 1280",
+          "service": false,
+          "src": "img/hero-terraced-site.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.49843912591051,
+          "ratio": "auto 1920 / 1281",
+          "service": false,
+          "src": "img/hero-farm-track.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-earthworks.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-driveways.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-fencing.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.7821782178217822,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-drainage.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-tractor.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 190.125,
+          "naturalRatio": 1.5,
+          "ratio": "16 / 9",
+          "service": true,
+          "src": "img/svc-siteprep.jpg",
+          "w": 338
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 381,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/about-tractor.jpg",
+          "w": 508
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 268.984375,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-earthworks.jpg",
+          "w": 358.65625
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 269,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-driveways.jpg",
+          "w": 358.671875
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 268.984375,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/svc-fencing.jpg",
+          "w": 358.65625
+        }
+      ],
+      "overflow": false
+    }
+  }
+]
