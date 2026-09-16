@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_FyDKB9JefvM9wyYwMvzyPf2opA4v",
+    "url": "https://nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app",
+    "inspectorUrl": "https://vercel.com/scaled-solutions/nicholson-contractors-demo/FyDKB9JefvM9wyYwMvzyPf2opA4v",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_FyDKB9JefvM9wyYwMvzyPf2opA4v"
+  },
+  "message": "Deployment nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+npm notice run npx
+npm notice run 'vc' deploy --prod --yes
+Vercel CLI 59.19.0 (Node.js 26.7.0)
+Deploying nicholson-contractors-demo
+Uploading [--------------------] (0.0B/18.2KB)
+Uploading [=================---] (16.0KB/18.2KB)
+Uploading [====================] (18.2KB/18.2KB)
+  Inspect         https://vercel.com/scaled-solutions/nicholson-contractors-demo/FyDKB9JefvM9wyYwMvzyPf2opA4v
+  Production      https://nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app
+Building…
+Building…
+[2K[1A[2K[G  Production      https://nicholson-contractors-demo-347zeyrz3-scaled-solutions.vercel.app
+Completing…
+▲ Aliased         https://nicholson-contractors-demo.vercel.app
+
+Live CSS verified identical to local source.
