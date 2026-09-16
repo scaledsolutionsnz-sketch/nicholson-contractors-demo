@@ -1,0 +1,26 @@
+{
+  "name": "Nicholson Contractors",
+  "phone": "+64275640042",
+  "email": "nicholsoncontractorsltd@gmail.com",
+  "address": "Halcombe Road, Feilding 4702",
+  "place_id": "ChIJ3a2qFYJKQG0RBZfmLG000B4",
+  "rating": "5.0",
+  "count": 2,
+  "social": [],
+  "read_reviews": "https://search.google.com/local/reviews?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4",
+  "write_review": "https://search.google.com/local/writereview?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4",
+  "reviews": [
+    [
+      "joshua millar",
+      5,
+      "4 years ago",
+      ""
+    ],
+    [
+      "Sam Nicholson",
+      5,
+      "7 years ago",
+      ""
+    ]
+  ]
+}

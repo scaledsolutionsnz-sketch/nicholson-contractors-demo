@@ -1,690 +1,216 @@
 <!DOCTYPE html>
+
 <html lang="en-NZ">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Nicholson Contractors | Rural Contracting, Feilding</title>
-<meta name="description" content="Nicholson Contractors handles earthworks, fencing, drainage and property work around Feilding and the wider Manawatu. Call Aaron for a straight quote.">
-<meta property="og:title" content="Nicholson Contractors | Rural Contracting, Feilding">
-<meta property="og:description" content="Earthworks, fencing, drainage and property work around Feilding. Call Aaron for a straight quote.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="img/hero-earthworks.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2322372c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23c8862e' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Red+Hat+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --pine:#22372c;
-  --pine-deep:#1a2b22;
-  --pine-soft:#2e4839;
-  --bone:#f3f1ea;
-  --bone-deep:#eae7dd;
-  --amber:#c8862e;
-  --amber-bright:#d99a45;
-  --amber-ink:#96621d;
-  --amber-deep:#7d5116;
-  --ink:#26312b;
-  --ink-soft:#5a675f;
-  --line:rgba(34,55,44,.14);
-  --radius:14px;
-  --shadow:0 14px 34px -18px rgba(26,43,34,.35);
-  --ease:cubic-bezier(.16,1,.3,1);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-img{image-orientation:from-image;max-width:100%}
-body{
-  font-family:'Red Hat Text',sans-serif;
-  color:var(--ink);
-  background:var(--bone);
-  line-height:1.7;
-  font-size:16px;
-  overflow-x:hidden;
-}
-::selection{background:var(--pine);color:var(--bone)}
-h1,h2,h3{font-family:'Zilla Slab',serif;line-height:1.15;color:var(--pine)}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.photo{filter:saturate(.85) contrast(1.05)}
-
-/* ---------- intro ---------- */
-#intro{
-  position:fixed;inset:0;z-index:200;background:var(--pine-deep);
-  display:flex;align-items:center;justify-content:center;
-  transition:opacity .7s var(--ease),visibility .7s;
-}
-#intro span{
-  font-family:'Zilla Slab',serif;font-size:1.6rem;font-weight:600;color:var(--bone);
-  letter-spacing:.04em;opacity:0;transform:translateY(14px);
-  animation:introIn .8s var(--ease) .15s forwards;
-}
-#intro.gone{opacity:0;visibility:hidden}
-@keyframes introIn{to{opacity:1;transform:none}}
-
-/* ---------- nav ---------- */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(243,241,234,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-  transition:box-shadow .3s;
-}
-nav.scrolled{box-shadow:0 6px 24px -14px rgba(26,43,34,.3)}
-.nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Zilla Slab',serif;font-weight:700;font-size:1.28rem;color:var(--pine);letter-spacing:.01em;white-space:nowrap}
-.brand b{color:var(--amber)}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:.94rem;font-weight:600}
-.nav-links a{color:var(--ink-soft);transition:color .25s}
-.nav-links a:hover{color:var(--pine)}
-.nav-phone{
-  display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;line-height:1;
-  background:var(--pine);color:#fdfcf8;border-radius:999px;font-weight:600;font-size:.9rem;
-  transition:background .25s,transform .25s;white-space:nowrap;
-}
-.nav-phone:hover{background:var(--pine-soft);transform:translateY(-1px)}
-.nav-phone svg{flex:none}
-#navToggle{display:none;background:none;border:0;cursor:pointer;padding:8px;color:var(--pine)}
-@media(max-width:840px){
-  .nav-links{
-    position:fixed;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
-    background:var(--bone);border-bottom:1px solid var(--line);
-    visibility:hidden;opacity:0;transform:translateY(-10px);pointer-events:none;
-    transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s;
-  }
-  .nav-links.open{visibility:visible;opacity:1;transform:none;pointer-events:auto}
-  .nav-links a{padding:15px 24px;border-top:1px solid var(--line);color:var(--ink)}
-  .nav-links .nav-phone{margin:14px 24px 18px;justify-content:center;border-radius:999px;border-top:0}
-  #navToggle{display:block}
-}
-
-/* ---------- hero ---------- */
-header.hero{
-  position:relative;min-height:100dvh;display:flex;align-items:center;
-  background:var(--pine-deep);overflow:hidden;
-}
-.slides{position:absolute;inset:0}
-.slides img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  opacity:0;transition:opacity 1.6s ease;filter:saturate(.85) contrast(1.05);
-}
-.slides img.on{opacity:1}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(200deg,rgba(26,43,34,.42) 0%,rgba(26,43,34,.68) 62%,rgba(26,43,34,.86) 100%)}
-.hero-content{position:relative;z-index:2;width:100%;padding:120px 0 90px}
-.hero-grid{max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,640px)}
-.eyebrow{
-  font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--amber-bright);margin-bottom:18px;
-}
-.hero h1{
-  font-size:clamp(2.5rem,5.4vw,3.9rem);font-weight:700;color:#fdfcf8;
-  margin-bottom:20px;
-}
-.hero p.lede{color:rgba(243,241,234,.85);font-size:1.1rem;max-width:34rem;margin-bottom:32px}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:38px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  height:52px;padding:0 28px;border-radius:999px;font-weight:700;font-size:1rem;line-height:1;
-  transition:transform .25s var(--ease),background .25s,box-shadow .25s;
-}
-.btn:active{transform:scale(.98)}
-.btn-amber{background:var(--amber-ink);color:#fff;box-shadow:0 12px 26px -14px rgba(26,43,34,.55)}
-.btn-amber:hover{background:var(--amber-deep);transform:translateY(-2px)}
-.btn-ghost{border:1.5px solid rgba(243,241,234,.55);color:#fdfcf8;background:rgba(26,43,34,.25)}
-.btn-ghost:hover{background:rgba(243,241,234,.14);transform:translateY(-2px)}
-.hero-review{
-  max-width:430px;border-radius:var(--radius);padding:18px 22px;
-  background:rgba(243,241,234,.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  border:1px solid rgba(243,241,234,.22);
-}
-.hero-review .stars{color:var(--amber-bright);display:flex;gap:3px;margin-bottom:8px}
-.hero-review blockquote{font-size:.95rem;color:rgba(243,241,234,.92);min-height:3.2em;transition:opacity .5s}
-.hero-review blockquote.fading{opacity:0}
-.hero-review cite{display:block;margin-top:8px;font-style:normal;font-size:.83rem;font-weight:600;color:rgba(243,241,234,.65)}
-
-/* ---------- sections ---------- */
-section{padding:96px 0}
-.sec-head{max-width:640px;margin-bottom:52px}
-.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:700;margin-bottom:14px}
-.sec-head p{color:var(--ink-soft)}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-
-/* services */
-#services{background:var(--bone)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.svc{
-  background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
-  box-shadow:var(--shadow);transition:transform .35s var(--ease),box-shadow .35s;
-  display:flex;flex-direction:column;
-}
-.svc:hover{transform:translateY(-6px);box-shadow:0 24px 44px -20px rgba(26,43,34,.4)}
-.svc img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
-.svc-body{padding:22px 24px 26px}
-.svc-label{display:flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-ink);margin-bottom:10px}
-.svc h3{font-size:1.3rem;font-weight:600;margin-bottom:8px}
-.svc p{font-size:.94rem;color:var(--ink-soft)}
-@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.svc-grid{grid-template-columns:1fr}}
-
-/* about */
-#about{background:var(--pine);color:var(--bone)}
-#about .sec-head h2,#about h2{color:#fdfcf8}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.about-photo{position:relative}
-.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);display:block}
-.about-tag{
-  position:absolute;bottom:-16px;left:-16px;background:var(--amber-ink);color:#fff;
-  font-family:'Zilla Slab',serif;font-weight:600;font-size:1rem;
-  padding:12px 20px;border-radius:12px;box-shadow:var(--shadow);
-}
-.about-copy h2{font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:18px}
-.about-copy p{color:rgba(243,241,234,.82);margin-bottom:16px}
-.checklist{list-style:none;margin-top:26px;display:grid;gap:14px}
-.checklist li{display:flex;gap:12px;align-items:flex-start;font-weight:600;color:#fdfcf8}
-.checklist svg{flex:none;margin-top:3px;color:var(--amber)}
-@media(max-width:840px){.about-grid{grid-template-columns:1fr}.about-tag{left:12px}}
-
-/* crew */
-#crew{background:var(--bone-deep)}
-.badge{
-  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  background:rgba(34,55,44,.08);color:var(--ink-soft);border:1px solid var(--line);
-  padding:5px 12px;border-radius:999px;margin-bottom:16px;
-}
-.crew-row{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.crew-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:32px 26px;text-align:center;box-shadow:var(--shadow);
-  transition:transform .35s var(--ease);
-}
-.crew-card:hover{transform:translateY(-5px)}
-.avatar{
-  width:82px;height:82px;margin:0 auto 18px;border-radius:50%;
-  background:var(--pine);color:var(--amber);border:3px solid var(--amber);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Zilla Slab',serif;font-weight:700;font-size:1.6rem;letter-spacing:.02em;
-}
-.crew-card h3{font-size:1.2rem;font-weight:600;margin-bottom:6px}
-.crew-card p{font-size:.92rem;color:var(--ink-soft)}
-@media(max-width:760px){.crew-row{grid-template-columns:1fr;max-width:400px;margin:0 auto}}
-
-/* reviews */
-#reviews{background:var(--bone)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:40px}
-.rev{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;
-}
-.rev .stars{display:flex;gap:3px;color:var(--amber)}
-.rev p{font-size:.95rem;color:var(--ink)}
-.rev footer{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--ink-soft);margin-top:auto}
-.rev footer b{color:var(--pine);font-weight:700}
-.rev-actions{display:flex;justify-content:center}
-.btn-outline{border:1.5px solid var(--pine);color:var(--pine);background:transparent}
-.btn-outline:hover{background:var(--pine);color:#fdfcf8;transform:translateY(-2px)}
-@media(max-width:900px){.rev-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto 40px}}
-
-/* review banner */
-#review-banner{background:var(--pine-deep);padding:70px 0}
-.banner-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:26px}
-.banner-inner h2{color:#fdfcf8;font-size:clamp(1.6rem,3vw,2.2rem)}
-.banner-inner p{color:rgba(243,241,234,.7);margin-top:6px}
-
-/* contact */
-#contact{background:var(--bone)}
-.contact-card{
-  background:var(--pine);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);
-  display:grid;grid-template-columns:1fr 1fr;min-height:520px;
-}
-.contact-map{position:relative;min-height:320px}
-.contact-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.contact-body{padding:48px 46px;color:var(--bone);display:flex;flex-direction:column;gap:22px}
-.contact-body h2{color:#fdfcf8;font-size:clamp(1.7rem,3vw,2.2rem)}
-.contact-body>p{color:rgba(243,241,234,.78);font-size:.98rem}
-.contact-btns{display:grid;gap:12px}
-.contact-btns .btn{width:100%}
-.btn-bone{background:var(--bone);color:var(--pine)}
-.btn-bone:hover{background:#fff;transform:translateY(-2px)}
-.c-rows{display:grid;gap:14px;margin-top:4px}
-.c-row{display:flex;gap:12px;align-items:center;font-size:.95rem;color:rgba(243,241,234,.9)}
-.c-row svg{flex:none;color:var(--amber)}
-.socials{display:flex;gap:12px;margin-top:6px}
-.socials a{
-  width:42px;height:42px;border-radius:50%;border:1px solid rgba(243,241,234,.3);
-  display:flex;align-items:center;justify-content:center;color:var(--bone);
-  transition:background .25s,transform .25s;
-}
-.socials a:hover{background:var(--amber);border-color:var(--amber);transform:translateY(-2px)}
-@media(max-width:880px){
-  .contact-card{grid-template-columns:1fr}
-  .contact-map{order:2;min-height:300px}
-  .contact-body{order:1;padding:38px 26px}
-}
-
-/* footer */
-footer.site{background:var(--pine-deep);color:rgba(243,241,234,.72);padding:54px 0 30px}
-.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:36px}
-.foot-brand{font-family:'Zilla Slab',serif;font-weight:700;font-size:1.3rem;color:#fdfcf8}
-.foot-brand b{color:var(--amber)}
-.foot-grid p{font-size:.9rem;max-width:300px;margin-top:8px}
-.foot-links{display:flex;gap:22px;font-size:.9rem;font-weight:600;flex-wrap:wrap}
-.foot-links a:hover{color:#fdfcf8}
-.foot-base{border-top:1px solid rgba(243,241,234,.14);padding-top:22px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-size:.82rem}
-.foot-base .socials a{width:38px;height:38px}
-
-@media (prefers-reduced-motion: reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-  .reveal{opacity:1;transform:none}
-}
-</style>
-</head>
+<meta content="Nicholson Contractors handles earthworks, fencing, drainage and property work around Feilding and the wider Manawatu. Call Aaron for a straight quote." name="description"/>
+<meta content="Nicholson Contractors | Rural Contracting, Feilding" property="og:title"/>
+<meta content="Earthworks, fencing, drainage and property work around Feilding. Call Aaron for a straight quote." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="img/hero-earthworks.jpg" property="og:image"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2322372c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23c8862e' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&amp;family=Red+Hat+Text:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 <body>
-
 <div id="intro"><span>Nicholson Contractors</span></div>
-
 <nav id="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#top">Nicholson <b>Contractors</b></a>
-    <button id="navToggle" aria-label="Open menu">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <div class="nav-links" id="navLinks">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-phone" href="tel:+64275640042">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<div class="nav-inner">
+<a class="brand" href="#top">Nicholson <b>Contractors</b></a>
+<a class="verified-mobile-call" href="tel:+64275640042">Call</a><button aria-expanded="false" aria-label="Open menu" data-menu-button="" id="navToggle">
+<svg fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 24 24" width="26"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+</button>
+<div class="nav-links" data-mobile-menu="" id="navLinks">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a class="nav-phone" href="tel:+64275640042">
+<svg fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
         027 564 0042
       </a>
-    </div>
-  </div>
+</div>
+</div>
 </nav>
-
 <header class="hero" id="top">
-  <div class="slides">
-    <img src="img/hero-earthworks.jpg" alt="Excavator digging on a construction site" class="on" fetchpriority="high" width="1920" height="1280">
-    <img src="img/hero-terraced-site.jpg" alt="Terraced earthworks cut into a hillside" loading="lazy" width="1920" height="1280">
-    <img src="img/hero-farm-track.jpg" alt="Gravel farm road running between fenced paddocks" loading="lazy" width="1920" height="1281">
-  </div>
-  <div class="hero-scrim"></div>
-  <div class="hero-content">
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Feilding · Rural Contracting</p>
-        <h1>Earthworks, fencing and property work around Feilding.</h1>
-        <p class="lede">From the first cut to the final tidy-up, Aaron and the team quote it straight, turn up on time and do the job once.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-amber" href="tel:+64275640042">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<div class="slides">
+<img alt="Excavator digging on a construction site" class="on" decoding="async" fetchpriority="high" height="1280" loading="eager" sizes="100vw" src="img/hero-earthworks.jpg" srcset="img/hero-earthworks-480.webp 480w, img/hero-earthworks-960.webp 960w, img/hero-earthworks-1600.webp 1600w, img/hero-earthworks.jpg 1920w" width="1920"/>
+<img alt="Terraced earthworks cut into a hillside" decoding="async" fetchpriority="auto" height="1280" loading="lazy" sizes="100vw" src="img/hero-terraced-site.jpg" srcset="img/hero-terraced-site-480.webp 480w, img/hero-terraced-site-960.webp 960w, img/hero-terraced-site-1600.webp 1600w, img/hero-terraced-site.jpg 1920w" width="1920"/>
+<img alt="Gravel farm road running between fenced paddocks" decoding="async" fetchpriority="auto" height="1281" loading="lazy" sizes="100vw" src="img/hero-farm-track.jpg" srcset="img/hero-farm-track-480.webp 480w, img/hero-farm-track-960.webp 960w, img/hero-farm-track-1600.webp 1600w, img/hero-farm-track.jpg 1920w" width="1920"/>
+</div>
+<div class="hero-scrim"></div>
+<div class="hero-content">
+<div class="hero-grid">
+<div>
+<p class="eyebrow">Nicholson Contractors</p>
+<h1>Earthworks, fencing and property work around Feilding.</h1>
+<p class="lede">Talk to Aaron about earthworks, fencing, drainage and property maintenance across Feilding and the Manawatū.</p>
+<div class="hero-ctas">
+<a class="btn btn-amber" href="tel:+64275640042">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             Call 027 564 0042
           </a>
-          <a class="btn btn-ghost" href="#contact">Get a quote</a>
-        </div>
-        <div class="hero-review" id="heroReview">
-          <div class="stars" aria-hidden="true">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          </div>
-          <blockquote id="heroQuote">Aaron cut our new driveway in a day and left the place tidier than he found it.</blockquote>
-          <cite id="heroCite">Example review · Mark, Halcombe</cite>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
+<a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4" rel="noopener" target="_blank">Leave a Review</a>
+</div>
+<a class="verified-rating" href="https://search.google.com/local/reviews?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4" rel="noopener" target="_blank"><span aria-label="5 out of 5 stars" class="verified-stars"><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></span><span>5.0 from 2 Google reviews</span></a>
+</div>
+</div>
+</div>
+<button aria-pressed="false" class="slide-control" type="button">Pause slideshow</button></header>
 <section id="services">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Work we take on</h2>
-      <p>One call covers the lot. If it involves a digger, a fence line or a tidy finish, the team can price it.</p>
-    </div>
-    <div class="svc-grid">
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-earthworks.jpg" alt="Excavator bucket dumping soil against a blue sky" loading="lazy" width="1200" height="800">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M5 20V9l7-5 7 5v11"/></svg>
+<div class="wrap">
+<div class="sec-head reveal">
+<h2>Work we take on</h2>
+<p>One call covers the lot. If it involves a digger, a fence line or a tidy finish, the team can price it.</p>
+</div>
+<div class="svc-grid">
+<article class="svc reveal">
+<img alt="Excavator bucket dumping soil against a blue sky" class="photo" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-earthworks.jpg" srcset="img/svc-earthworks-480.webp 480w, img/svc-earthworks-960.webp 960w, img/svc-earthworks.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M2 20h20M5 20V9l7-5 7 5v11"></path></svg>
             Earthmoving
           </p>
-          <h3>Earthworks &amp; excavation</h3>
-          <p>Site cuts, building platforms, holes and general digger work, priced by the job so you know where you stand.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-driveways.jpg" alt="Metal farm track running through trees" loading="lazy" width="1200" height="800">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19l4-14M20 19L16 5M12 7v2M12 13v2"/></svg>
+<h3>Earthworks &amp; excavation</h3>
+<p>Site cuts, building platforms, holes and general digger work, priced by the job so you know where you stand.</p>
+</div>
+</article>
+<article class="svc reveal">
+<img alt="Metal farm track running through trees" class="photo" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-driveways.jpg" srcset="img/svc-driveways-480.webp 480w, img/svc-driveways-960.webp 960w, img/svc-driveways.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M4 19l4-14M20 19L16 5M12 7v2M12 13v2"></path></svg>
             Access
           </p>
-          <h3>Driveways &amp; farm tracks</h3>
-          <p>New driveways, race repairs and metalling that shed water properly, so you get up the hill in July.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-fencing.jpg" alt="Cattle standing behind a wire farm fence" loading="lazy" width="1200" height="900">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16M12 4v16M20 4v16M4 9h16M4 15h16"/></svg>
+<h3>Driveways &amp; farm tracks</h3>
+<p>New driveways, race repairs and metalling that shed water properly, so you get up the hill in July.</p>
+</div>
+</article>
+<article class="svc reveal">
+<img alt="Cattle standing behind a wire farm fence" class="photo" decoding="async" height="900" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-fencing.jpg" srcset="img/svc-fencing-480.webp 480w, img/svc-fencing-960.webp 960w, img/svc-fencing.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M4 4v16M12 4v16M20 4v16M4 9h16M4 15h16"></path></svg>
             Fencing
           </p>
-          <h3>Farm fencing</h3>
-          <p>Post and wire, gates and stock-proof repairs that hold the herd where it should be.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-drainage.jpg" alt="Excavator working on top of an earth bank" loading="lazy" width="1200" height="674">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 10c2 3 5 3 7 0s5-3 7 0"/></svg>
+<h3>Farm fencing</h3>
+<p>Post and wire, gates and stock-proof repairs that hold the herd where it should be.</p>
+</div>
+</article>
+<article class="svc reveal">
+<img alt="Excavator working on top of an earth bank" class="photo" decoding="async" height="674" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-drainage.jpg" srcset="img/svc-drainage-480.webp 480w, img/svc-drainage-960.webp 960w, img/svc-drainage.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M12 3v18M5 10c2 3 5 3 7 0s5-3 7 0"></path></svg>
             Water
           </p>
-          <h3>Drainage &amp; trenching</h3>
-          <p>Field drains, culverts and trenching for water or power, dug clean and backfilled properly.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-tractor.jpg" alt="Tractor mowing a grass paddock" loading="lazy" width="1200" height="800">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="4"/><circle cx="18" cy="18" r="2.5"/><path d="M7 13V7h7l2 6"/></svg>
+<h3>Drainage &amp; trenching</h3>
+<p>Field drains, culverts and trenching for water or power, dug clean and backfilled properly.</p>
+</div>
+</article>
+<article class="svc reveal">
+<img alt="Tractor mowing a grass paddock" class="photo" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-tractor.jpg" srcset="img/svc-tractor-480.webp 480w, img/svc-tractor-960.webp 960w, img/svc-tractor.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><circle cx="7" cy="17" r="4"></circle><circle cx="18" cy="18" r="2.5"></circle><path d="M7 13V7h7l2 6"></path></svg>
             Paddocks
           </p>
-          <h3>Paddock &amp; land work</h3>
-          <p>Mowing, topping and general tractor work to keep lifestyle blocks and runoffs under control.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <img class="photo" src="img/svc-siteprep.jpg" alt="Excavator digging earth on a cleared site" loading="lazy" width="1200" height="800">
-        <div class="svc-body">
-          <p class="svc-label">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8l6-5 4 4-6 5M9 8l-5 5 4 4 5-5M9 8l4 4"/></svg>
+<h3>Paddock &amp; land work</h3>
+<p>Mowing, topping and general tractor work to keep lifestyle blocks and runoffs under control.</p>
+</div>
+</article>
+<article class="svc reveal">
+<img alt="Excavator digging earth on a cleared site" class="photo" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-siteprep.jpg" srcset="img/svc-siteprep-480.webp 480w, img/svc-siteprep-960.webp 960w, img/svc-siteprep.jpg 1200w" width="1200"/>
+<div class="svc-body">
+<p class="svc-label">
+<svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M3 21h18M9 8l6-5 4 4-6 5M9 8l-5 5 4 4 5-5M9 8l4 4"></path></svg>
             Site work
           </p>
-          <h3>Section clearing &amp; prep</h3>
-          <p>Scrub removal, stump-outs and site tidy-ups that get a section ready for the builders.</p>
-        </div>
-      </article>
-    </div>
-  </div>
+<h3>Section clearing &amp; prep</h3>
+<p>Scrub removal, stump-outs and site tidy-ups that get a section ready for the builders.</p>
+</div>
+</article>
+</div>
+</div>
 </section>
-
 <section id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-photo reveal">
-        <img class="photo" src="img/about-tractor.jpg" alt="Tractor working a green paddock behind a timber fence" loading="lazy" width="1400" height="933">
-        <span class="about-tag">Feilding based</span>
-      </div>
-      <div class="about-copy reveal">
-        <h2>Local, straight-up, and easy to deal with</h2>
-        <p>Nicholson Contractors is run by Aaron out of Feilding, working across the district and the wider Manawatu. Most jobs come through word of mouth, which only happens when the work holds up.</p>
-        <p>You deal with the person doing the work. One call, a walk over the site, a clear price, then the gear turns up when we said it would.</p>
-        <ul class="checklist">
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+<div class="wrap">
+<div class="about-grid">
+<div class="about-photo reveal">
+<img alt="Tractor working a green paddock behind a timber fence" class="photo" decoding="async" height="933" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/about-tractor.jpg" srcset="img/about-tractor-480.webp 480w, img/about-tractor-960.webp 960w, img/about-tractor.jpg 1400w" width="1400"/>
+<span class="about-tag">Feilding based</span>
+</div>
+<div class="about-copy reveal">
+<h2>Local, straight-up, and easy to deal with</h2>
+<p>Nicholson Contractors is based in Feilding. Contact Aaron to discuss earthworks, fencing and rural property work in the district.</p>
+<p>You deal with the person doing the work. One call, a walk over the site, a clear price, then the gear turns up when we said it would.</p>
+<ul class="checklist">
+<li>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="18"><path d="M20 6L9 17l-5-5"></path></svg>
             Locally owned and operated
           </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+<li>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="18"><path d="M20 6L9 17l-5-5"></path></svg>
             Clear quotes before work starts
           </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            Sites left tidy, every time
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<li>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="18"><path d="M20 6L9 17l-5-5"></path></svg>Earthworks and rural property maintenance</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
-<section id="crew">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="badge">Example team</span>
-      <h2>Who turns up</h2>
-      <p>A small crew means the person you ring is the person on the digger. Roles below show how a typical job is run.</p>
-    </div>
-    <div class="crew-row">
-      <div class="crew-card reveal">
-        <div class="avatar">NC</div>
-        <h3>Owner / Operator</h3>
-        <p>Your first call. Walks the site with you, prices the job and runs the machine.</p>
-      </div>
-      <div class="crew-card reveal">
-        <div class="avatar">NC</div>
-        <h3>Machine Operator</h3>
-        <p>On the digger or tractor for the bigger jobs, so the work keeps moving.</p>
-      </div>
-      <div class="crew-card reveal">
-        <div class="avatar">NC</div>
-        <h3>Fencing Hand</h3>
-        <p>Posts in straight, wires tight, gates swinging the way they should.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="badge">Example reviews</span>
-      <h2>What locals say</h2>
-      <p>These are sample reviews written for this demo. Real Google reviews will replace them once connected.</p>
-    </div>
-    <div class="rev-grid">
-      <article class="rev reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <p>"Aaron cut our new driveway in a day and left the place tidier than he found it. Price matched the quote to the dollar."</p>
-        <footer><b>Mark</b><span>Halcombe</span></footer>
-      </article>
-      <article class="rev reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <p>"Had a boggy gateway for years. One afternoon of drainage work and it has stayed dry all winter."</p>
-        <footer><b>Sue</b><span>Kimbolton</span></footer>
-      </article>
-      <article class="rev reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <p>"Fenced two paddocks and re-hung our gates. Turned up when he said, done in two days, good bloke to deal with."</p>
-        <footer><b>Pete</b><span>Sanson</span></footer>
-      </article>
-    </div>
-    <div class="rev-actions reveal">
-      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Nicholson%20Contractors%20Feilding" target="_blank" rel="noopener">See all our Google reviews</a>
-    </div>
-  </div>
-</section>
-
+<section class="verified-section verified-gallery" id="gallery"><div class="verified-wrap"><h2>Our services in focus</h2><div class="verified-grid"><figure><img alt="Nicholson Contractors — service illustration" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-earthworks.jpg" srcset="img/svc-earthworks-480.webp 480w, img/svc-earthworks-960.webp 960w, img/svc-earthworks.jpg 1200w" width="1200"/><figcaption>Illustrative photograph</figcaption></figure><figure><img alt="Nicholson Contractors — service illustration" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-driveways.jpg" srcset="img/svc-driveways-480.webp 480w, img/svc-driveways-960.webp 960w, img/svc-driveways.jpg 1200w" width="1200"/><figcaption>Illustrative photograph</figcaption></figure><figure><img alt="Nicholson Contractors — service illustration" decoding="async" height="900" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/svc-fencing.jpg" srcset="img/svc-fencing-480.webp 480w, img/svc-fencing-960.webp 960w, img/svc-fencing.jpg 1200w" width="1200"/><figcaption>Illustrative photograph</figcaption></figure></div><a class="verified-button" href="gallery.html">Explore the gallery</a></div></section><section class="verified-section" id="reviews"><div class="verified-wrap"><h2>5.0 from 2 Google reviews</h2><p>Selected Google review excerpts and ratings. Dates are shown as Google displayed them on 16 September 2026.</p><div class="verified-grid"><article class="verified-card"><span aria-label="5 out of 5 stars" class="verified-stars"><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></span><p>Rating only — no written review.</p><strong>joshua millar</strong><small>4 years ago · Google</small></article><article class="verified-card"><span aria-label="5 out of 5 stars" class="verified-stars"><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg><svg aria-hidden="true" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"></path></svg></span><p>Rating only — no written review.</p><strong>Sam Nicholson</strong><small>7 years ago · Google</small></article></div><div class="verified-actions"><a class="verified-button primary" href="https://search.google.com/local/writereview?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4" rel="noopener" target="_blank">Leave a Review</a><a class="verified-button" href="https://search.google.com/local/reviews?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4" rel="noopener" target="_blank">See all our Google reviews</a></div></div></section>
 <section id="review-banner">
-  <div class="wrap banner-inner reveal">
-    <div>
-      <h2>Happy with our work?</h2>
-      <p>A quick Google review helps other locals find us.</p>
-    </div>
-    <a class="btn btn-amber" href="https://www.google.com/maps/search/?api=1&query=Nicholson%20Contractors%20Feilding" target="_blank" rel="noopener">Leave us a review</a>
-  </div>
+<div class="wrap banner-inner reveal">
+<div>
+<h2>Happy with our work?</h2>
+<p>A quick Google review helps other locals find us.</p>
+</div>
+<a class="btn btn-amber" href="https://search.google.com/local/writereview?placeid=ChIJ3a2qFYJKQG0RBZfmLG000B4" rel="noopener" target="_blank">Leave us a review</a>
+</div>
 </section>
-
 <section id="contact">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Get a quote</h2>
-      <p>Ring or email with a rough idea of the job. Aaron will come out, have a look and give you a price.</p>
-    </div>
-    <div class="contact-card reveal">
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps?q=Feilding%2C%20New%20Zealand&output=embed" loading="lazy" title="Map showing Feilding, New Zealand" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-      <div class="contact-body">
-        <h2>Talk to Aaron</h2>
-        <p>Most quotes are sorted within a couple of days of the first call.</p>
-        <div class="contact-btns">
-          <a class="btn btn-amber" href="tel:+64275640042">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<div class="wrap">
+<div class="sec-head reveal">
+<h2>Get a quote</h2>
+<p>Ring or email with a rough idea of the job. Aaron will come out, have a look and give you a price.</p>
+</div>
+<div class="contact-card reveal" style="grid-template-columns:1fr">
+<div class="contact-body">
+<h2>Talk to Aaron</h2>
+<p>Call to discuss the scope of your job and arrange a quote.</p>
+<div class="contact-btns">
+<a class="btn btn-amber" href="tel:+64275640042">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             Call Nicholson Contractors
           </a>
-          <a class="btn btn-bone" data-gmail data-user="nicholsoncontractorsltd" data-domain="gmail.com" data-su="Quote%20request%20from%20the%20website" href="#contact">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+<a class="btn btn-bone" href="mailto:nicholsoncontractorsltd@gmail.com">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 6L2 7"></path></svg>
             Email Nicholson Contractors
           </a>
-        </div>
-        <div class="c-rows">
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+64275640042">027 564 0042</a>
-          </div>
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            <span id="emailText">Email us for a quote</span>
-          </div>
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Feilding, servicing the wider Manawatu</span>
-          </div>
-        </div>
-        <div class="socials">
-          <a href="https://www.facebook.com/search/top?q=Nicholson%20Contractors%20Feilding" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=Nicholson%20Contractors" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="c-rows">
+<div class="c-row">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<a href="tel:+64275640042">027 564 0042</a>
+</div>
+<div class="c-row">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 6L2 7"></path></svg>
+<span id="emailText">nicholsoncontractorsltd@gmail.com</span>
+</div>
+<div class="c-row">
+<svg fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="17"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span>Feilding, servicing the wider Manawatu</span>
+</div>
+</div>
+<div class="verified-socials"><a aria-label="Search Facebook for Nicholson Contractors (profile unverified)" href="https://www.facebook.com/search/top?q=Nicholson%20Contractors%20%20Feilding%204702" rel="noopener" target="_blank"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"></path></svg></a></div>
+</div>
+</div>
+</div>
 </section>
-
-<footer class="site">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">Nicholson <b>Contractors</b></div>
-        <p>Earthworks, fencing and rural contracting, based in Feilding and working across the Manawatu.</p>
-      </div>
-      <div class="foot-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-    </div>
-    <div class="foot-base">
-      <span>&copy; 2026 Nicholson Contractors. All rights reserved.</span>
-      <div class="socials">
-        <a href="https://www.facebook.com/search/top?q=Nicholson%20Contractors%20Feilding" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/explore/search/keyword/?q=Nicholson%20Contractors" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // intro overlay
-  var intro = document.getElementById('intro');
-  window.addEventListener('load', function(){
-    setTimeout(function(){ intro.classList.add('gone'); }, reduced ? 0 : 900);
-  });
-  setTimeout(function(){ intro.classList.add('gone'); }, 2500);
-
-  // nav
-  var nav = document.getElementById('nav');
-  var toggle = document.getElementById('navToggle');
-  var links = document.getElementById('navLinks');
-  toggle.addEventListener('click', function(){ links.classList.toggle('open'); });
-  links.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ links.classList.remove('open'); }); });
-  var navObserver = new IntersectionObserver(function(entries){
-    nav.classList.toggle('scrolled', !entries[0].isIntersecting);
-  }, {threshold:0});
-  var topSentinel = document.createElement('div');
-  topSentinel.style.cssText = 'position:absolute;top:0;height:60px;width:1px;';
-  document.body.prepend(topSentinel);
-  navObserver.observe(topSentinel);
-
-  // hero slides
-  var slides = document.querySelectorAll('.slides img');
-  var current = 0;
-  if(!reduced){
-    setInterval(function(){
-      slides[current].classList.remove('on');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('on');
-    }, 6000);
-  }
-
-  // hero review rotation
-  var quotes = [
-    {text:'Aaron cut our new driveway in a day and left the place tidier than he found it.', name:'Example review · Mark, Halcombe'},
-    {text:'Had a boggy gateway for years. One afternoon of drainage work and it has stayed dry all winter.', name:'Example review · Sue, Kimbolton'},
-    {text:'Fenced two paddocks and re-hung our gates. Turned up when he said, done in two days.', name:'Example review · Pete, Sanson'}
-  ];
-  var qEl = document.getElementById('heroQuote');
-  var cEl = document.getElementById('heroCite');
-  var qi = 0;
-  if(!reduced){
-    setInterval(function(){
-      qEl.classList.add('fading');
-      setTimeout(function(){
-        qi = (qi + 1) % quotes.length;
-        qEl.textContent = quotes[qi].text;
-        cEl.textContent = quotes[qi].name;
-        qEl.classList.remove('fading');
-      }, 500);
-    }, 6000);
-  }
-
-  // scroll reveals
-  var revObserver = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); revObserver.unobserve(e.target); }
-    });
-  }, {threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){ revObserver.observe(el); });
-
-  // gmail compose links
-  document.querySelectorAll('a[data-gmail]').forEach(function(a){
-    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
-    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su')||'') + '&body=' + (a.getAttribute('data-body')||'');
-    a.target = '_blank';
-    a.rel = 'noopener';
-  });
-  var emailText = document.getElementById('emailText');
-  if(emailText){ emailText.textContent = 'nicholsoncontractorsltd' + '@' + 'gmail.com'; }
-})();
-</script>
-</body>
+<section aria-label="Business location" class="verified-map"><div class="verified-wrap"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Nicholson%20Contractors%20Halcombe%20Road%2C%20Feilding%204702&amp;output=embed" title="Map of Nicholson Contractors, Halcombe Road, Feilding 4702"></iframe></div></section><footer class="verified-footer"><div class="verified-wrap"><div><strong>Nicholson Contractors</strong><p>Halcombe Road, Feilding 4702</p><div class="verified-socials"><a aria-label="Search Facebook for Nicholson Contractors (profile unverified)" href="https://www.facebook.com/search/top?q=Nicholson%20Contractors%20%20Feilding%204702" rel="noopener" target="_blank"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"></path></svg></a></div></div><div><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="/terms.html">Terms &amp; Conditions</a><a href="/privacy.html">Privacy Policy</a><p>© 2026 Nicholson Contractors</p></div></div></footer><script defer="" src="site.js"></script></body>
 </html>

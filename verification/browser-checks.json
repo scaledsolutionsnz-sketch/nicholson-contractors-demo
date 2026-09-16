@@ -1,0 +1,32 @@
+[
+  {
+    "width": 375,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":24,\\\"y\\\":173.15625,\\\"width\\\":327,\\\"height\\\":109.3125,\\\"top\\\":173.15625,\\\"right\\\":351,\\\"bottom\\\":282.46875,\\\"left\\\":24},\\\"widget\\\":{\\\"x\\\":24,\\\"y\\\":572.03125,\\\"width\\\":327,\\\"height\\\":80,\\\"top\\\":572.03125,\\\"right\\\":351,\\\"bottom\\\":652.03125,\\\"left\\\":24},\\\"buttons\\\":[{\\\"visible\\\":true,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 768,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":24,\\\"y\\\":275.4375,\\\"width\\\":525.5,\\\"height\\\":143.0625,\\\"top\\\":275.4375,\\\"right\\\":549.5,\\\"bottom\\\":418.5,\\\"left\\\":24},\\\"widget\\\":{\\\"x\\\":24,\\\"y\\\":642.3125,\\\"width\\\":333.515625,\\\"height\\\":52,\\\"top\\\":642.3125,\\\"right\\\":357.515625,\\\"bottom\\\":694.3125,\\\"left\\\":24},\\\"buttons\\\":[{\\\"visible\\\":true,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 1440,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":184,\\\"y\\\":239.3125,\\\"width\\\":640,\\\"height\\\":215.296875,\\\"top\\\":239.3125,\\\"right\\\":824,\\\"bottom\\\":454.609375,\\\"left\\\":184},\\\"widget\\\":{\\\"x\\\":184,\\\"y\\\":678.421875,\\\"width\\\":333.515625,\\\"height\\\":52,\\\"top\\\":678.421875,\\\"right\\\":517.515625,\\\"bottom\\\":730.421875,\\\"left\\\":184},\\\"buttons\\\":[{\\\"visible\\\":false,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 375,
+    "page": "terms.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Terms & Conditions\\\",\\\"broken\\\":[]}\""
+  },
+  {
+    "width": 375,
+    "page": "privacy.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Privacy Policy\\\",\\\"broken\\\":[]}\""
+  },
+  {
+    "width": 375,
+    "page": "gallery.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Gallery\\\",\\\"broken\\\":[]}\""
+  }
+]
